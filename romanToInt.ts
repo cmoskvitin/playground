@@ -40,13 +40,11 @@ function romanToInt(s: string): number {
     return sum; 
 };
 
-const inputs = [
-    'X',
-    'IX',
-    'MCMXCVI',
-    'III',
-    'XXX',
-    'XXXX'
-];
+const inputs = (`
+I
+XX
+L
+CD
+`.split(/\r?\n/)).slice(1,-1);
 
 ShowResultsDOM('results', romanToInt, inputs);
