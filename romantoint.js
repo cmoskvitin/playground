@@ -1,3 +1,4 @@
+import { ShowResultsDOM } from './showResults.js';
 function romanToInt(s) {
     let sum = 0;
     for (let i = 0; i < s.length; i++) {
@@ -32,12 +33,12 @@ function romanToInt(s) {
         }
         else if (previousRoman == 'X') {
             if (currentRoman == 'L' || currentRoman == 'C') {
-                sum -= 10;
+                sum -= 20;
             }
         }
         else if (previousRoman == 'C') {
             if (currentRoman == 'D' || currentRoman == 'M') {
-                sum -= 100;
+                sum -= 200;
             }
         }
         ;
@@ -46,10 +47,13 @@ function romanToInt(s) {
     return sum;
 }
 ;
-const romanInput = ["III", "IV", "IX", "LVIII", "MCMXCIV"];
-for (let i in romanInput) {
-    console.log(romanToInt(romanInput[i]));
-}
-;
-console.log(romanInput);
+const inputs = [
+    'X',
+    'IX',
+    'MCMXCVI',
+    'III',
+    'XXX',
+    'XXXX'
+];
+ShowResultsDOM('results', romanToInt, inputs);
 //# sourceMappingURL=romanToInt.js.map
