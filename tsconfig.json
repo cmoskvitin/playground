@@ -5,8 +5,8 @@
         "sourceMap": true
     },
     "files": [
-        "showResults.ts",
-        "romanToInt.ts"
-
+        "app.ts",
+        "func.ts",
+        "showResults.ts"
     ]
 }

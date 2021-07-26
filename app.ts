@@ -1,13 +1,12 @@
-function level1 (n: number){
-    n = 20;
-    function level2 (n: number){
-        n = 30;
-        return n;
-    }
-    n = level2(n);     
-    return n;
-}
+import { romanToInt } from './func.js'; 
+import { ShowResultsDOM } from './showResults.js';
 
-let num = 10;
-num = level1(num);
-console.log(level1(num));
+const inputs = (`
+I
+XX
+L
+CD
+XXX
+`.split(/\r?\n/)).slice(1,-1);
+
+ShowResultsDOM('results', romanToInt, inputs);

@@ -1,5 +1,5 @@
-/* COLOR PALETTE
-https://colorhunt.co/palette/907fa4a58faaa6d6d6ededd0
+/* COLOR PALETTES
+https://colorhunt.co
 */
 
 :root{
@@ -37,10 +37,10 @@ body {
     min-width: 100%;
 }
 .input, .output{
-    text-align: left;
+    text-align: center;
     padding-left: 5%;
-    padding-right: 0.5%;
-    
+    padding-right: 5px;
+    color: var(--color-bg);
 }
 .input{
     background-color: var(--color-primary);
