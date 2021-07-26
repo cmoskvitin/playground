@@ -7,6 +7,7 @@ XX
 CCCD
 CD
 XXIV
+CCM
 `.split(/\r?\n/)).slice(1,-1);
 
 ShowSolution('results', Solution, inputs);
