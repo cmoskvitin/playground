@@ -8,6 +8,7 @@ CCCD
 CD
 XXIV
 CCM
+MMMCD
 `.split(/\r?\n/)).slice(1,-1);
 
 ShowSolution('results', Solution, inputs);
