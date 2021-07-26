@@ -1,6 +1,8 @@
 export default function ShowResultsDOM(elem: string, func:Function, inputs:any[]):void{
     const placeToInsert = document.getElementById(elem);
 
+    // let ibit = 
+
     const classContainer = 'ibit';
     const classInputBlock = 'input';
     const classOutputBlock = 'output';
@@ -23,7 +25,7 @@ export default function ShowResultsDOM(elem: string, func:Function, inputs:any[]
         container.appendChild(numerator);
         container.appendChild(outputBlock);
         numerator.textContent = i.toString();
-        inputBlock.textContent = inputs[i].toString();
+        inputBlock.textContent = inputs[i];
         outputBlock.textContent = func(inputs[i]).toString();
     }
     
