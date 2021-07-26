@@ -1,4 +1,4 @@
-export function romanToInt(s: string): number {
+export default function romanToInt(s: string): number {
     let sum = 0;
     for (let i = 0; i < s.length; i++){
         

@@ -1,5 +1,5 @@
-import { romanToInt } from './func.js'; 
-import { ShowResultsDOM } from './showResults.js';
+import Solution from './func.js'; 
+import ShowSolution from './showResults.js';
 
 const inputs = (`
 I
@@ -9,4 +9,4 @@ CD
 XXX
 `.split(/\r?\n/)).slice(1,-1);
 
-ShowResultsDOM('results', romanToInt, inputs);
+ShowSolution('results', Solution, inputs);

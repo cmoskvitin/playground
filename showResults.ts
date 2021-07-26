@@ -1,4 +1,4 @@
-export function ShowResultsDOM(elem: string, func:Function, inputs:any[]):void{
+export default function ShowResultsDOM(elem: string, func:Function, inputs:any[]):void{
     const placeToInsert = document.getElementById(elem);
 
     const classContainer = 'ibit';
