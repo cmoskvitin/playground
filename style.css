@@ -3,10 +3,12 @@ https://colorhunt.co
 */
 
 :root{
-    --color-bg:#383E56;
-    --color-primary:#EEDAD1;
-    --color-secondary:#D4B5B0;
-    --color-accent:#383E56;
+    --color-bg:rgba(71, 61, 139, 0.697);
+    --color-border:darkslateblue;
+    --color-border-opaque: rgba(71, 61, 139, 0.559);
+    --color-primary: rgb(226, 233, 236);
+    --color-secondary:#bdd3e4;
+    --color-accent: darkslateblue;
 }
 
 body {
@@ -40,21 +42,25 @@ body {
     text-align: center;
     padding-left: 5%;
     padding-right: 5px;
-    color: var(--color-bg);
+    color: darkslateblue;
 }
 .input{
     background-color: var(--color-primary);
-    border-radius: 1.75vh 1.75vh 0 0;
+    border: 1px solid var(--color-border);
+    border-bottom: 0px;
+    border-radius: 1.75vh 0 0 0;
 }
 .output{
+    border: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border-opaque);
     background-color: var(--color-secondary);
-    border-radius: 0 0 1.7vh 1.7vh;
 }
 .numerator{
     font-size: 2vh;
     display: flex;
     justify-content: center;
     color: white;
+    border: 0px solid var(--color-border);
     background-color: var(--color-accent);
     width: 3vh;
     height: 3vh;
