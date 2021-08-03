@@ -1,5 +1,6 @@
-import Solution from '../dist/func.js'; 
-import ShowSolution from '../dist/showResults.js';
-import { Inputs } from './inputs.js';
+import Solution from './func.js'; 
+import { ShowResultsDOM } from './showResults.js';
+import { testInputs } from './inputs.js';
 
-ShowSolution('results', Solution, Inputs.values, Inputs.type);
+
+ShowResultsDOM('results', Solution, testInputs);

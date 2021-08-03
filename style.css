@@ -5,7 +5,6 @@ https://colorhunt.co
 :root{
     --color-bg:rgba(71, 61, 139, 0.697);
     --color-border:darkslateblue;
-    --color-border-opaque: rgba(71, 61, 139, 0.559);
     --color-primary: rgb(226, 233, 236);
     --color-secondary:#bdd3e4;
     --color-accent: darkslateblue;
@@ -38,6 +37,9 @@ body {
     flex-direction: column;
     min-width: 100%;
 }
+.ibit .input:first-child{
+    border-radius: 1.75vh 0 0 0;
+}
 .input, .output{
     text-align: center;
     padding-left: 5%;
@@ -48,11 +50,9 @@ body {
     background-color: var(--color-primary);
     border: 1px solid var(--color-border);
     border-bottom: 0px;
-    border-radius: 1.75vh 0 0 0;
 }
 .output{
     border: 1px solid var(--color-border);
-    border-top: 1px solid var(--color-border-opaque);
     background-color: var(--color-secondary);
 }
 .numerator{
